@@ -229,8 +229,14 @@ fun Message(
             Spacer(modifier = Modifier.preferredWidth(74.dp))
         }
 
-
-//
+        SenderAndTextMessage(
+            msg = message,
+            isFirstMessageBySender = isFirstMessageBySender,
+            isLastMessageBySender = isLastMessageBySender,
+            modifier = Modifier
+                .padding(end = 16.dp)
+                .weight(1f)
+        )
     }
 }
 
